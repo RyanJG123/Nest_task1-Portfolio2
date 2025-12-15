@@ -1,0 +1,150 @@
+/* Apply the aesthetic background to the entire page body */
+body {
+    /* Use a dark, subtle gradient for a professional look */
+    background-color: #1a1a2e; /* Dark primary color */
+    background-image: linear-gradient(
+        to bottom right, 
+        #1a1a2e, /* Dark blue/purple */
+        #270b22 
+    );
+    color: #f4f4f4; /* Light text color for high contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    /* Use a lighter version of your existing gradient for contrast */
+    background-image: linear-gradient(
+        to right, 
+        #2a9d8f, /* Teal/Mint color */
+        #264653  /* Darker teal/blue */
+    );
+    padding: 15px; /* Increased padding */
+    margin: 20px 0; /* Add margin only top/bottom */
+    border: none; /* Remove the heavy border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Add depth */
+}
+
+/* Style for links inside the navbar */
+.navbar a {
+    color: #ffffff; /* White text for contrast on the dark bar */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em; /* Slightly larger text */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.navbar a:hover {
+    color: #ffc107; /* Pop of bright yellow/gold on hover */
+}
+
+/* Remove default list styling */
+.hello ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- Card Container (for alignment) --- */
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards if there's extra space */
+    gap: 30px; /* Use gap for spacing instead of margin on .card */
+    padding: 40px 20px;
+}
+
+/* --- Individual Card Styling --- */
+.card {
+    width: 45%; 
+    max-width: 450px; 
+    
+    /* Aesthetic changes */
+    background-color: #2b2d42; /* Darker background for the card body */
+    border: none;
+    border-radius: 12px; /* Smoother, larger border radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger, deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect transition */
+    overflow: hidden; 
+}
+
+/* Hover Effect for interaction */
+.card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); /* Enhance the shadow */
+}
+
+.card img {
+    width: 100%;
+    /* Ensure the image fills its container while maintaining aspect ratio */
+    height: 250px; 
+    object-fit: cover;
+    /* Optional: Slightly darken the image for mood */
+    filter: brightness(0.85); 
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    color: #90e0ef; /* Light blue/cyan title color */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #ccc; /* Slightly muted text color */
+}
+
+.btn-primary {
+    /* Style the button to match the aesthetic */
+    background-color: #2a9d8f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #264653;
+}
+
+body {
+    background-color: #1a1a2e;
+    background-image: linear-gradient(
+        to bottom right, 
+        #1a1a2e, 
+        #270b22 
+    );
+    color: #f4f4f4; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex; /* Makes the children (.card) flow horizontally */
+    justify-content: center; /* Centers the group of cards horizontally */
+    gap: 30px; /* Space between the two cards */
+    padding: 40px 20px;
+}
+
+.card {
+    /* Ensure cards have a defined width so they can sit next to each other */
+    width: 45%; 
+    max-width: 450px; 
+    /* Add the rest of your card aesthetics here (background-color, box-shadow, etc.) */
+    background-color: #2b2d42; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+}
